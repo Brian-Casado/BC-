@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Contracts in Louisiana</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/avif" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000' width='48px' height='48px'%3E%3Cpath d='M20 2H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h2v2h2V17h12v2h2v-2h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 16H4V4h16v14zm-5-9h2v4h-2zm-4 0h2v4H9z'/%3E%3C/svg%3E" style="border-radius: 100%;">
+
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+header img{
+    width: 50px;
+    border-radius: 10%;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.marmol-img {
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 100px;
+    width: 80%;
+
+    
+}
+@media screen and (min-width:868px) {
+
+    .marmol-img {
+    overflow: hidden;
+    height: 100px;
+    object-fit: contain;
+    background: repeat;
+    width: 50%;
+    left: 25%;
+
+    
+}
+}
+.marmol-img img{
+    width: 90%;
+    position: relative;
+    margin: 10px 0px 30px 15px;
+    
+}
+ul {
+    list-style: none;
+}
+
+.advantages, .services {
+    margin-top: 40px;
+}
+
+.service {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    transition: 200ms ease;
+    border-radius: 1em;
+
+}
+
+.service img {
+    width: 50px;
+    
+
+}
+.service:hover {
+            transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Agrega sombra al pasar el ratón */
+            transition: 200ms ease;
+
+        }
+
+        .services {
+            background-image: url('assets/services-background.jpg'); /* Añade una imagen de fondo a la sección de servicios */
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 40px;
+            color: #333;
+            transition: 200ms ease;
+
+        }
+
+ button{
+    background-color: #292828;
+    color: white;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+
+button:hover {
+    background-color: #333;
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+    transition: 200ms ease;
+
+}
+.GoBackBtn{
+    background-color: #292828;
+    color: white;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 3px 40px;
+
+}
+
+.GoBackBtn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.animations {
+    text-align: center;
+}
+
+#animateButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#animateButton:hover {
+    background-color: #459aa0;
+}
+
+footer{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            height: fit-content;
+            padding: 50px 20px;
+            background-color: rgb(26, 26, 26);
+            color: #ffffff;
+            list-style: none;
+            
+
+            
+        }
+
+        .footer-textContainer{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: small;
+            flex: 50%;
+
+        }
+
+        .footerText1,.footerText2,.footerText3{
+            margin: 10px;
+
+        }
+
+
+
+        .footer-mediaIons{
+            position: relative;
+            flex: 25%;
+            padding: 10px;
+            margin: 0 auto;
+
+
+
+        }
+        .footer-mediaIons img{
+            width: 30px;
+            border-radius: 4px;
+            margin-right: 5px;
+            margin-top: 5px;
+            transition: 0.1s ease;
+            cursor: pointer;
+
+        }
+        .footer-mediaIons1{
+            position: absolute;
+            margin-left: 0px;
+            flex: 25;
+        }      
+        
+        .footer-mediaIons1:hover{
+            width: 32px;
+        }
+        .footer-mediaIons2:hover{
+            width: 32px;
+        }
+        .footer-mediaIons3:hover{
+            width: 32px;
+        }
+        .footer-mediaIons4:hover{
+            width: 32px;
+        }
+        
+        .footer-mediaIons2{
+            position: absolute;
+            margin-left: 40px;
+            flex: 25;
+        }        
+        
+        .footer-mediaIons3{
+            position: absolute;
+            margin-left: 80px;
+            flex: 25;
+        }
+
+        .footer-mediaIons4{
+            position: absolute;
+            margin-left: 120px;
+        }
+ 
+
+
+        .footer-mediaIons p{
+            margin-top:70px;
+            margin-bottom:10px;
+        }
+
+        .last-footerPart {
+            width: 100%;
+        }
+
+        .footerButton  {
+            background-color: rgb(41, 41, 41);
+            transition: 0.2s ease;
+        }     
+        
+        .footerButton:hover  {
+            background-color: rgb(74, 73, 73);
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+        
+        <div class="header-img animate-scroll">
+            <img class="animate" src="assets/logo-small-icon.jpg" alt="">
+        </div>
+        <h1>Transportation Contracts in Louisiana </h1>
+        <p>Discover the advantages of our taxi, shuttle, and towing contracts.</p>
+    </header>
+<button class="GoBackBtn"><i class='bx bxs-chevron-right bx-rotate-180' ></i><a href="towing-service.html">Go back</a></button>
+    <section class="advantages">
+        <h2>Advantages of Our Contracts</h2>
+        <ul>
+            <li>Convenient and affordable access to transportation services.</li>
+            <li>Flexibility to meet your travel needs.</li>
+            <li>Reliable 24/7 towing assistance.</li>
+            <li>Professional and friendly drivers.</li>
+        </ul>
+    </section>
+<div class="marmol-img animate-scroll">
+    <img src="assets/form-background.jpg" alt="">
+</div>
+
+
+<!-- Dentro de la sección de servicios -->
+<section class="services animate-scroll">
+    <h2>Services Offered</h2>
+
+    <!-- Contenido para el servicio de taxi -->
+    <div class="service" id="taxiService">
+        <img src="assets/taxi-service.jpg" alt="Taxi Icon">
+        <h3>Taxi Service
+            <i class='bx bx-phone'></i><button id="phone-link" href="#">Contact</button>
+
+            <script>
+                document.getElementById('phone-link').addEventListener('click', function () {
+                    var phoneNumber = '8504958272';
+                    window.location.href = 'tel:' + phoneNumber;
+                });
+            </script>
+            <button onclick="sendEmail('brian.code2003@gmail.com')">Email Our Team</button>
+        </h3>
+        <p>Fast and safe transportation to your destination with competitive rates.</p>
+    </div>
+
+    <!-- Contenido para el servicio de shuttle -->
+    <div class="service" id="shuttleService">
+        <img src="assets/shuttle-service1.jpg" alt="Shuttle Icon">
+        <h3>Shuttle service
+            <i class='bx bx-phone'></i><button id="phone-link2" href="#">Contact</button>
+            <script>
+                document.getElementById('phone-link2').addEventListener('click', function () {
+                    var phoneNumber = '8504958272';
+                    window.location.href = 'tel:' + phoneNumber;
+                });
+            </script>
+            <button onclick="sendEmail('brian.code2003@gmail.com')">Email Our Team</button>
+        </h3>
+        <p>Comfortable and efficient transportation for small and large groups.</p>
+    </div>
+
+    <!-- Contenido para el servicio de towing -->
+    <div class="service" id="towingService">
+        <img src="assets/towing-service22.jpg" alt="Towing Icon">
+        <h3>Towing service
+            <i class='bx bx-phone'></i><button id="phone-link3" href="#">Contact</button>
+            <script>
+                document.getElementById('phone-link3').addEventListener('click', function () {
+                    var phoneNumber = '8504958272';
+                    window.location.href = 'tel:' + phoneNumber;
+                });
+            </script>
+            <button onclick="sendEmail('brian.code2003@gmail.com')">Email Our Team</button>
+        </h3>
+        <p>Quick and reliable towing assistance to address roadside issues.</p>
+    </div>
+</section>
+
+
+    <section class="animations">
+        <h2>Explore Our Services with Style</h2>
+<button class="GoBackBtn"><i class='bx bxs-chevron-right bx-rotate-180' ></i><a href="towing-service.html">Go back</a></button>
+        
+    </section>
+
+    <script src="anime.min.js"></script>
+    <script>
+
+
+
+
+        // PhoneScrips+++++++++++++++++++++++++++++++
+
+
+        
+        // PhoneScrips+++++++++++++++++++++++++++++++
+
+        function sendEmail(destination) {
+            // Abre el cliente de correo predeterminado con destinatario, asunto y cuerpo predefinidos
+            window.location.href = `mailto:${destination}?subject=Inquiry&body=I'm interested in your services.`;
+        }
+
+
+
+
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+
+
+
+
+
+    </script>
+
+    <script src="scrips.js"></script>
+
+    <footer>
+        <div class="footer-textContainer animate-scroll">
+            <div class="footerText1">
+                <ul>
+                    <li>Software Developer</li>
+                    <li>More products</li>
+                    <li>hotel without shuttle?</li>
+                    <li>Louisiana</li>
+                    <li>Delgado Community</li>
+                    <li>student</li>
+                    <li>Brian Casado</li>
+                    <li>New Orleans</li>
+                </ul>               
+            </div>            
+            <div class="footerText2">
+                <ul>
+                    <li>For all the pictures</li>
+                    <li>High-quality pictures</li>
+                    <li>Graphic Design</li>
+                    <li>San Pedro De Macoris</li>
+                    <li>Thanks to Feep!k</li>
+                    <li>Contact</li>
+                    <li>850-495-8272</li>
+                </ul>
+            </div>
+        
+            <div class="footerText3">
+                <ul>
+                    <li>Dominican Republic 🇩🇴</li>
+                    <li>brian.code2003@gmail.com</li>
+                    <li>Academia X student</li>
+                    <li>Hire us for Web Dev</li>
+                    <li>About</li>
+                    <li>BCasado</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-mediaIons">
+            <h3>SOCIAL MEDIA</h3>
+            <img class="footer-mediaIons1" src="assets/meta-footer.webp" alt="">
+            <img class="footer-mediaIons2" src="assets/X-icon.png" alt="">
+            <img class="footer-mediaIons3" src="assets/YouTube-icon.png" alt="">
+            <img class="footer-mediaIons4" src="assets/in-icon.png" alt="">
+            <p>Our Customer Service is 24/7 so feel free to call anytime!</p>
+            <button class="footerButton">CONTACT US</button>
+        </div>
+
+        <div class="last-footerPart">
+            <hr>
+            <h2>BCasado</h2>
+            <small>Copyright &#169 2023-2024 BCasado Company L.L.C All rights reserved.</small>
+            <button id="scrollToTopBtn" onclick="scrollToTop()">↑ Top</button>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+
+

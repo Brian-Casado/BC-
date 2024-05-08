@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towing Services</title>
+    <link rel="icon" type="image/avif" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000' width='48px' height='48px'%3E%3Cpath d='M20 2H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h2v2h2V17h12v2h2v-2h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 16H4V4h16v14zm-5-9h2v4h-2zm-4 0h2v4H9z'/%3E%3C/svg%3E" style="border-radius: 100%;">
+    <link rel="stylesheet" href="test.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+
+    <nav class="main-nav">
+        <ul id="css-ul1" class="css-ul1">
+            <li class="nav-logo">
+                <a href="towing-service.html" class="main-menu__link"><img src="assets/logo-small-icon.jpg" title="icon-img-logo-black" alt="img"></a>
+            </li>
+            <li class="item1"><a href="testArea.html">Shuttle </a><i onclick="toggle()" class='bx bx-calendar'></i></li>
+            <li class="item2"><a href="towing-service.html">Towing Service</a></li>
+            
+            <li class="item3"><a href="taxi-service.html">Taxi Service</a></li>
+
+            <!-- CONTRUCTION -->
+
+
+            <div class="dropdown" data-dropdown>
+            
+            <button class="link item4" data-dropdown-button>More<i class='bx bxs-chevron-down'></i></button></li>
+                <div class="dropdown-menu information-grid">
+                  <div>
+                    <div class="dropdown-heading">Join Us</div>
+                    <div class="dropdown-links">
+                      <a href="hotel.html" class="link">Hotel</a>
+                      <a href="Airport.html" class="link">Airport</a>
+                      <a href="contracts.html" class="link">Contracts</a>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="dropdown-heading">Web Dev</div>
+                    <div class="dropdown-links">
+                      <a href="hotel.html" class="link"><i class='bx bxs-hotel'></i></a>
+                      <a href="Airport.html" class="link"><i class='bx bxs-plane-alt'></i></a>
+                      <a href="">
+                       <a class="link" id="phone-link2" href="#">Contact</a>
+
+                      </a>
+                      <script>
+                          document.getElementById('phone-link2').addEventListener('click', function () {
+                              var phoneNumber = '8504958272';
+                              window.location.href = 'tel:' + phoneNumber;
+                          });
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- CONTRUCTION -->
+
+        </ul>   
+        <ul class="css-ul2">
+            <li class="item5"><a href="#AboutArea">About</a></li>
+            <li class="item6"><a href="Location.html">Location</a></li> 
+            <li class="nav-button"><button><a href="#" onclick="toggle()">Book Towing</a></button></li>
+        </ul>
+    </nav>
+    <script>
+        function toggleMenu() {
+            var mainMenu = document.querySelector('.main-menu');
+            mainMenu.classList.toggle('active');
+        }
+    </script>
+    <nav class="main-nav">
+        <div id="toggle-menu" class="toggle-menu">
+            <img class="toggle-img"onclick=toggle() src="hamburger-menu-icon-png-white-15.jpg.png" alt="">
+        </div>
+        <ul id="main-menu" class="main-menu">
+            <div class="logo">
+                <div class="cube">
+                    <a href="index.html">
+                        <img src="index.html" alt=""><img src="assets/logo-small-icon.jpg" alt=""> </a>
+                </div>
+            </div>
+            <li class="main-menu__item">
+                <a href="index.html" id="homeLink" class="main-menu__link">Shuttle <i class='bx bx-calendar'></i></a>
+            </li>
+            <li class="main-menu__item">
+                <a href="towing-service.html" id="serviceLink" class="main-menu__link">Towing Service</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="taxi-service.html" id="locationLink" class="main-menu__link">Join Us!</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#seccionDestino" id="aboutLink" class="main-menu__link">Location</a>
+            </li>
+            <li id="btn">
+                <button id="contactButton"><h3>CONTACT US NOW!</h3></button>
+            </li>
+        </ul>
+    </nav>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <button id="toggle-menu-btn" onclick="toggleMenu()">☰</button>
+
+    <div class="row">
+        <aside>
+            <div class="text-container">
+                <h1 class="animate-scroll">24/7 Towing Services When You Need It</h1>
+                <h1 class="animate-scroll" style="color: rgb(133, 45, 205);">We're in Lousiana, Missisipi and Houston</h1>
+
+                <small class="animate-scroll">Reliable towing assistance to get you back on the road.</small>
+
+                <a class="animate-scroll" href="#" id="button-main" onclick="toggle()"><b>Request Towing</b></a>
+            </div>
+
+        </aside>
+
+        <section>
+            <img class="animate-scroll" src="assets/shuttle-service1.jpg" alt="">
+        </section>
+
+    </div>
+
+    <h2 id="bookShuttleBtn1" onclick="toggleBlur()">Request towing</h2>
+    <div id="popup" class="container22">
+        <img src="assets/form-background.jpg" alt="">
+        <form id="towing-reservation-form1">
+            <label for="name1">Name:</label>
+            <input type="text" id="name" name="name" required>
+ 
+            <label for="address1">Phone Number:</label>
+            <input type="number" id="address" name="Number" required>
+ 
+            <label for="date1">Pickup Date <i class='bx bx-calendar'></i>:</label>
+            <input type="date" id="date" name="date" required>
+ 
+            <label for="comments1">Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+ 
+            <button type="submit">Submit Reservation</button>
+            <button type="button" class="closeButton" onclick="toggle()">Close</button>
+        </form>
+    </div>
+
+    <div class="service" id="taxiService">
+        
+    </div>
+
+
+
+
+
+    <div class="parallax-container" id="parallaxContainer">
+        <div class="paralax-container-text">
+            <h2 class="">Our Towing Services!</h2>
+            <p class="">Available 24/7 for all your towing needs.</p>
+        </div>
+        <div class="parallax-layer parallax-bg" id="parallaxBg"></div>
+        <div class=" parallax-layer content1"></div>
+
+
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card" id="">
+            <img  src="assets/Copia de shuttle-service1.jpg" class="card-img" alt="">
+            <div class="card-body1">
+                <h1 class="card-tittle">SHUTTLE</h1>
+                <b class="card-sub-tittle">Affordable Luxury</b>
+                <p class="card-info">At our Shuttle Services, we redefine your travel experience by providing a reliable, comfortable,and efficient way to reach your destination.</p>
+                <button class="card-btn-1">Book Shuttle</button>
+
+            </div>
+            <h4>Shuttle Service <i class='bx bxs-city'></i></h4>
+
+        </div>
+        
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="assets/towing-service22.jpg" class="card-img" alt="">
+            <div class="card-body2">
+                <h1 class="card-tittle">TOWING</h1>
+                <b class="card-sub-tittle">24/7 Assistance</b>
+                <p class="card-info">When life throws you a curveball on the road, our Towing Service is here to help. We understand that unexpected breakdowns happen, and that's where we come in.</p>
+                <button class="card-btn-2">Request Service</button>
+            </div>
+          <h4>Towing Service <i class='bx bxs-car-garage'></i></h4>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="assets/taxi-service.jpg" class="card-img" alt="">
+            <div class="card-body3">
+                <h1 class="card-tittle">TAXI</h1>
+                <b class="card-sub-tittle">On-Demand Availability</b>
+                <p class="card-info">Welcome to our Taxi Services, where we bring convenience to your doorstep. Need a ride on short notice or planning a night out? Our fleet of reliable taxis is at your service. </p>
+                <button class="card-btn-3">Book Taxi</button>
+            </div>
+        <h4>Taxi Service <i class='bx bx-taxi'></i></h4>
+
+        
+
+        </div>
+
+    </div>
+
+ </div>
+
+<div class="scrollerContainer">
+    <h1 style="text-align: center">Working For Our Community!</h1>
+
+    <div class="scroller" data-speed="fast">
+      <ul class="tag-list scroller__inner">
+        <li>Twoing</li>
+        <li>Cap</li>
+        <li>Shuttle</li>
+        <li>SSG</li>
+        <li>webdev</li>
+        <li>animation</li>
+        <li>UI/UX</li>
+        <li>Js</li>
+        <li>Joing us</li>
+        <li>SSG</li>
+        <li>webdev</li>
+        <li>animation</li>
+        <li>UI/UX</li>
+      </ul>
+    </div>
+    
+    <div class="scroller" data-direction="right" data-speed="slow">
+      <div class="scroller__inner">
+        <img src="assets/blue-car.jpg" alt="" width="300px" />
+        <img src="assets/service-girl.jpg" alt="" width="400px" />
+        <img src="assets/web-woman.jpg" alt="" width="300px" />
+        <img src="assets/guys-group2.jpg" alt="" width="300px" />
+        <img src="assets/travel-pic.jpg" alt="" width="400px" />
+        <img src="assets/web-guy.jpg" alt="" width="300px" />
+      </div>
+    </div>
+    
+    
+    </div>
+</div>
+    <script>
+        const scrollers = document.querySelectorAll(".scroller");
+    
+    // If a user hasn't opted in for recuded motion, then we add the animation
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+    
+    function addAnimation() {
+      scrollers.forEach((scroller) => {
+        // add data-animated="true" to every `.scroller` on the page
+        scroller.setAttribute("data-animated", true);
+    
+        // Make an array from the elements within `.scroller-inner`
+        const scrollerInner = scroller.querySelector(".scroller__inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+    
+        // For each item in the array, clone it
+        // add aria-hidden to it
+        // add it into the `.scroller-inner`
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute("aria-hidden", true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+      });
+    }
+    </script>
+    
+
+    <div id="AboutArea" class="main-text-content">
+        <h1>About Our Towing Services!</h1>
+
+        <div class="main-text-content-image">
+            <img src="assets/form-background.jpg" alt="">
+        </div>
+
+        <div class="item_1 animate-scroll">
+            <p>
+                <strong> <i class='bx bx-credit-card' ></i> Affordable Assistance</strong> <br>Our shuttle services are priced competitively to provide you with cost-effective solutions during unexpected breakdowns.
+            </p>
+        </div>
+        <div class="item_2 animate-scroll">
+            <p>
+                <strong> <i class='bx bxs-user-check'></i>24/7 Support</strong> <br>Exceptional customer service is available 24/7. We understand that emergencies don't wait, and neither do we.
+            </p>
+        </div>
+        <div class="item_3 animate-scroll">
+            <p>
+                <strong>  <i class='bx bx-been-here' ></i>Serving Louisiana</strong> <br>Conveniently located in the heart of Louisiana, our towing services cover the entire state, ensuring prompt assistance wherever you are.
+            </p>        
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-textContainer animate-scroll">
+            <div class="footerText1">
+                <ul>
+                    <li>Software Developer</li>
+                    <li>More products</li>
+                    <li>hotel without shuttle?</li>
+                    <li>Louisiana</li>
+                    <li>Delgado Community</li>
+                    <li>student</li>
+                    <li>Brian Casado</li>
+                    <li>New Orleans</li>
+                </ul>               
+            </div>            
+            <div class="footerText2">
+                <ul>
+                    <li>For all the pictures</li>
+                    <li>High-quality pictures</li>
+                    <li>Graphic Design</li>
+                    <li>San Pedro De Macoris</li>
+                    <li>Thanks to Feep!k</li>
+                    <li>Contact</li>
+                    <li>850-495-8272</li>
+                </ul>
+            </div>
+        
+            <div class="footerText3">
+                <ul>
+                    <li>Dominican Republic 🇩🇴</li>
+                    <li>brian.code2003@gmail.com</li>
+                    <li>Academia X student</li>
+                    <li>Hire us for Web Dev</li>
+                    <li>About</li>
+                    <li>BCasado</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-mediaIons">
+            <h3>SOCIAL MEDIA</h3>
+            <img class="footer-mediaIons1" src="assets/meta-footer.webp" alt="">
+            <img class="footer-mediaIons2" src="assets/X-icon.png" alt="">
+            <img class="footer-mediaIons3" src="assets/YouTube-icon.png" alt="">
+            <img class="footer-mediaIons4" src="assets/in-icon.png" alt="">
+            <p>Our Customer Service is 24/7 so feel free to call anytime!</p>
+            <button class="footerButton">CONTACT US</button>
+        </div>
+
+        <div class="last-footerPart">
+            <hr>
+            <h2>BCasado</h2>
+            <small>Copyright &#169 2023-2024 BCasado Company L.L.C All rights reserved.</small>
+            <button id="scrollToTopBtn" onclick="scrollToTop()">↑ Top</button>
+        </div>
+    </footer>
+
+    <script src="scrips.js"></script>
+</body>
+</html>
